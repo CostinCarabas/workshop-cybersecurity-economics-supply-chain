@@ -33,7 +33,7 @@ That is what you are here for.
 | **Mid-morning** | Debate: reading a gap |
 | **Pre-lunch** | Scenario drop — the afternoon changes |
 | **Lunch** | — |
-| **Post-lunch** | Debate: classifying an incident under pressure |
+| **Post-lunch** | Classifying an incident under pressure |
 | **Afternoon** | Batch 2 — Scenario-based tasks |
 | **End of day** | Discussions |
 
