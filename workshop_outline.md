@@ -30,12 +30,12 @@ That is what you are here for.
 | Block | What Happens |
 |---|---|
 | **Morning** | Batch 1 — Foundation tasks (you work, instructor circulates) |
-| **Mid-morning** | Instructor demo: reading a gap |
+| **Mid-morning** | Debate: reading a gap |
 | **Pre-lunch** | Scenario drop — the afternoon changes |
 | **Lunch** | — |
-| **Post-lunch** | Instructor demo: classifying an incident under pressure |
+| **Post-lunch** | Debate: classifying an incident under pressure |
 | **Afternoon** | Batch 2 — Scenario-based tasks |
-| **End of day** | Instructor walkthrough: one thread, end to end |
+| **End of day** | Discussions |
 
 You work individually or in a team of your choice. There are no deliverables to hand in. The point is the thinking, not the document.
 
