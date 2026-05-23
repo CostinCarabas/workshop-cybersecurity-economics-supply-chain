@@ -51,13 +51,6 @@ DataSwift (Pillar 4) creates the worst **ICT concentration risk** *(→ L.4 — 
 
 The **interdependence of pillars** *(→ L.3)* is visible here: the Pillar 4 gap (no Article 30 contract) directly causes the Pillar 2 gap (no incident notification from DataSwift), which worsens the Pillar 1 gap (stale risk register misses the dependency entirely).
 
-### What Makes a Strong Student Answer
-
-- Connects pillar gaps to each other — demonstrates understanding of pillar interdependence *(→ L.3)*
-- Distinguishes between "missing the document" and "missing the underlying capability"
-- Uses NordPay-specific evidence (DataSwift, BankCore, AWS) rather than generic compliance statements
-- Justifies the prioritisation of one pillar over others with a risk-based argument *(→ L.2 — risk-based approach)*
-
 ---
 
 ## Task 2 — Gap Analysis
@@ -89,13 +82,6 @@ The **interdependence of pillars** *(→ L.3)* is visible here: the Pillar 4 gap
 
 **Pillar 4:** AWS configuration has no documented failover region — a **single point of failure** in the infrastructure layer *(→ L.14 — SPOFs)*. DataSwift integration likely uses static API keys with no IP allowlisting — a **detection** gap *(→ L.11)* that also creates an uncontrolled authentication surface.
 
-### What Makes a Strong Student Answer
-
-- Identifies High-severity gaps separately from Medium — does not treat all gaps as equal
-- Correctly applies **proportionality** *(→ L.2)*: notes where it applies and where it does not (Article 30 and concentration risk assessment are non-negotiable regardless of size)
-- First actions are specific and actionable — not "improve third-party risk management" but "initiate contract renegotiation with DataSwift"
-- Flags assumptions — demonstrates the audit-ready mindset described in Lecture 6 *(→ L.6)*
-
 ---
 
 ## Task 3 — Risk Register
@@ -118,14 +104,6 @@ The **interdependence of pillars** *(→ L.3)* is visible here: the Pillar 4 gap
 **Risk 3 — BankCore ransomware** *(→ L.11 — protection and prevention)*: On-premise software from 2019 with no documented patch management cycle. Any unpatched CVE is a live ransomware entry point. Mitigation: quarterly patching schedule; network segmentation of BankCore zone; EDR tooling on all on-premise servers.
 
 **Risk 4 — API key compromise** *(→ L.11 — detection; L.14 — contractual security standards)*: The DataSwift integration likely relies on static API keys without rotation or IP allowlisting *(→ L.14 — minimum security standards)*. A single credential leak gives an attacker persistent access to payment routing. Mitigation: API key rotation every 90 days; mutual TLS (mTLS) authentication; IP allowlisting at the DataSwift API gateway.
-
-### What Makes a Strong Student Answer
-
-- Risk scoring is justified — likelihood and impact are argued, not guessed
-- Risks span multiple categories — demonstrates the broad view of **ICT Risk** *(→ L.4)*
-- Current controls column is honest: "annual training" is not strong, and the student names that
-- Ownership is assigned to a specific role, not "the company" or "IT" — reflects the **RACI logic** introduced in Lecture 9 *(→ L.9)*
-- At least one risk directly links to the gap analysis — shows the register is a living tool, not a static document *(→ L.9)*
 
 ---
 
@@ -197,14 +175,6 @@ Classification should be made with available information and explicitly flagged 
 6. **Preserve logs in write-once storage** — logs that can be altered are not admissible evidence and undermine the regulatory report *(→ L.12 — documentation and recovery)*
 
 These artefacts feed the regulatory report directly: timestamps establish the incident timeline; source IPs establish whether the attack was external or internal; API logs establish what data may have been accessed; memory captures support forensic attribution.
-
-### What Makes a Strong Student Answer
-
-- Classification argued using all three criteria *(→ L.12)*, not just one
-- Initial notification sent despite incomplete information — not held until DataSwift confirms *(→ L.12)*
-- Notification explicitly flags what is unknown and why it does not prevent notification
-- Information map assigns ownership to specific roles, not "the company" or "IT"
-- Students who identify GDPR as a **parallel reporting obligation** *(→ L.12)* show advanced understanding of the regulatory compliance dimension
 
 ---
 
