@@ -118,6 +118,16 @@ Build a risk register for NordPay covering **at least six ICT risks**. For each 
 
 ---
 
+# SCENARIO DROP
+
+---
+
+> **12:27 — Message from NordPay's CTO:**
+>
+> *"Hi — we have a situation. DataSwift has been unreachable since approximately 11:30. Payment routing has been down for close to three hours. We have also just found what looks like anomalous API key activity in our logs going back to last night. We don't know if this is a breach or a misconfiguration on their side. The COO is asking whether we need to notify anyone. What do we do?"*
+
+---
+
 # Reference
 
 ## DORA's Five Pillars
