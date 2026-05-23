@@ -30,12 +30,12 @@ That is what you are here for.
 | Block | What Happens |
 |---|---|
 | **Morning** | Batch 1 — Foundation tasks (you work, instructor circulates) |
-| **Mid-morning** | Debate: reading a gap |
+| **Mid-morning** | Instructor demo: reading a gap |
 | **Pre-lunch** | Scenario drop — the afternoon changes |
 | **Lunch** | — |
-| **Post-lunch** | Classifying an incident under pressure |
+| **Post-lunch** | Instructor demo: classifying an incident under pressure |
 | **Afternoon** | Batch 2 — Scenario-based tasks |
-| **End of day** | Discussions |
+| **End of day** | Instructor walkthrough: one thread, end to end |
 
 You work individually or in a team of your choice. There are no deliverables to hand in. The point is the thinking, not the document.
 
@@ -120,11 +120,165 @@ Build a risk register for NordPay covering **at least six ICT risks**. For each 
 
 # SCENARIO DROP
 
+*This will be revealed by the instructor before lunch. Do not read ahead.*
+
 ---
 
-> **12:27 — Message from NordPay's CTO:**
+> **14:07 — Message from NordPay's CTO:**
 >
 > *"Hi — we have a situation. DataSwift has been unreachable since approximately 11:30. Payment routing has been down for close to three hours. We have also just found what looks like anomalous API key activity in our logs going back to last night. We don't know if this is a breach or a misconfiguration on their side. The COO is asking whether we need to notify anyone. What do we do?"*
+
+---
+
+# BATCH 2 — Scenario-Based Tasks
+
+*Continue in your team from the morning. The Stretch Task is available for fast-finishing groups.*
+
+---
+
+## Task 4 — Incident Classification & Regulatory Reporting
+
+**Time:** ~40 min
+
+Based on the DataSwift incident, complete the following:
+
+**Part A — Classification**
+
+Apply DORA's three classification criteria to the scenario. Is this a **major ICT-related incident**? Use the table below:
+
+| Criterion | What We Know | What We Don't Know Yet | Preliminary Assessment |
+|---|---|---|---|
+| Confidentiality / Integrity / Availability / Authenticity | | | |
+| Criticality of affected services | | | |
+| Economic impact | | | |
+
+State your classification decision and justify it.
+
+**Part B — Initial Notification**
+
+Draft the initial notification to NordPay's competent authority (De Nederlandsche Bank). You do not have all the facts yet. Write what you can, flag what you do not know, and explain why you are notifying now rather than waiting.
+
+Your notification should include:
+- Description of the incident (what is known)
+- Services and functions affected
+- Actions taken so far
+- What remains unknown and under investigation
+- Point of contact for follow-up
+
+**Part C — Information Map**
+
+List what additional information is needed for the **intermediate** and **final reports**, and identify which internal NordPay role is responsible for providing each piece.
+
+> **If you have a technical background, also consider:** What forensic steps should NordPay's ICT team take in the first two hours? How do those steps directly feed the regulatory report — which logs, timestamps, and artefacts are essential?
+
+---
+
+**Key question to discuss with your team:**
+*Who inside NordPay makes the call to notify the competent authority — and who approves that decision? Look at the RACI you built in Task 6.*
+
+---
+
+## Task 5 — Third-Party Contract Evaluation
+
+**Time:** ~45 min
+
+NordPay shares their existing contract with DataSwift. It is a standard SaaS agreement from 2021.
+
+**What it contains:** standard liability caps, 30-day termination notice, GDPR data processing clauses, 99.5% uptime SLA.
+
+**What it does not contain:** audit rights, incident notification timeline, subcontracting disclosure, data location requirements, exit and transition plan, security standards obligation, business continuity obligations.
+
+**Part A — Missing elements**
+
+List every mandatory element missing under **Article 30 of DORA**. For each, note the risk it creates for NordPay.
+
+| Missing Element | DORA Basis | Risk to NordPay |
+|---|---|---|
+
+**Part B — Draft clauses**
+
+Draft the **three most critical missing clauses** in plain professional language — as you would write them for NordPay's legal team to insert into the renegotiated contract.
+
+**Part C — Concentration risk**
+
+Is DataSwift a **Type 1** or **Type 2** concentration risk for NordPay? What is NordPay's current fallback — and is it adequate?
+
+| Concentration Risk Type | Definition | NordPay's Situation |
+|---|---|---|
+| Type 1 | One provider delivering multiple critical services to the same entity | |
+| Type 2 | Many institutions relying on the same ICT provider | |
+
+> **If you have a technical background, also consider:** DataSwift's website lists an ISO 27001 certificate last audited 18 months ago. Is this sufficient evidence of compliance with DORA's security standards? What additional assurance would you recommend NordPay require?
+
+---
+
+**Key question to discuss with your team:**
+*If NordPay wanted to terminate DataSwift today — given what the contract actually says — what would happen?*
+
+---
+
+## Task 6 — Governance RACI
+
+**Time:** ~35 min
+
+NordPay's management body has never formally assigned DORA responsibilities. Design a RACI matrix for the following six controls:
+
+1. ICT risk register maintenance
+2. Incident classification and escalation
+3. Third-party contract oversight
+4. TLPT scheduling and remediation
+5. Business continuity plan approval
+6. Information sharing participation
+
+Map each control across four roles using **R / A / C / I**:
+
+| Control | Board | CTO | Compliance Officer | ICT Operations |
+|---|---|---|---|---|
+| ICT risk register maintenance | | | | |
+| Incident classification and escalation | | | | |
+| Third-party contract oversight | | | | |
+| TLPT scheduling and remediation | | | | |
+| Business continuity plan approval | | | | |
+| Information sharing participation | | | | |
+
+**Then answer:** Are there any controls where no one is currently **Accountable** at NordPay, given their profile? What is the organisational risk of that vacancy — and what happened today as a result?
+
+---
+
+**Key question to discuss with your team:**
+*When the CTO sent the 14:07 message, who should have received it first — and why wasn't that in the contract?*
+
+---
+
+## STRETCH Task 7 — Information Sharing Arrangement
+
+**Time:** ~25 min | *For fast-finishing groups*
+
+Following today's incident, NordPay wants to join a pan-EU financial sector ISAC (Information Sharing and Analysis Centre).
+
+**Part A — What to share**
+
+From the DataSwift incident, what types of intelligence would NordPay share with the ISAC? What would they withhold, and why?
+
+| Share | Withhold | Reason for Withholding |
+|---|---|---|
+
+**Part B — Formal arrangement elements**
+
+What formal elements must the participation arrangement include under **Article 45 of DORA**?
+
+**Part C — Notification to the competent authority**
+
+When NordPay joins the ISAC, what must they notify DNB — and what does that notification need to contain?
+
+**Part D — Sharing without exposure**
+
+How does the DataSwift incident become valuable intelligence for the wider financial sector without exposing NordPay to legal or reputational risk? What anonymisation and protocol decisions matter?
+
+---
+
+**Key question to discuss with your team:**
+*If every payment institution in the EU had shared intelligence about DataSwift-type API vulnerabilities six months ago, would today's incident have happened — or would NordPay have seen it coming?*
 
 ---
 
